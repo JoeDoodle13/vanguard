@@ -62,7 +62,48 @@ table {
     --font: "Inter", sans-serif;
 }
 
+
+
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+html {
+    font-family: var(--font);
+}
+
+
+@media screen and (min-width: 400px) {
+    header {
+        background-color:var(--black);
+        color:var(--blue);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 2rem 0rem 2rem 2rem;
+        box-shadow: 0px 5px 15px 5px var(--blue);
+        position: relative;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header h2 {
+        font-size: 4rem;
+        font-weight: normal;
+        color: var(--white);
+    }
+
+    nav ul {
+        visibility: hidden;
+        height: 1px;
+    }
+}
+
+
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
