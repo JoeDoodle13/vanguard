@@ -178,6 +178,49 @@ html {
         font-weight: bold;
         padding: 1rem;
     }
+
+
+
+    /* results */
+    .results {
+        background-color: var(--blue);
+        padding: 2rem 1rem;
+        color: var(--white);
+    }
+
+    .results h2, .results h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        text-indent: 1rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .results p {
+        max-width: 475px;
+        line-height: 1.75rem;
+        margin: 1rem 2rem;
+    }
+
+    table {
+        margin: 2rem 1rem;
+        background-color: var(--black);
+        text-align: center;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    th, td {
+        padding: 1rem;
+        border: 1px solid var(--charcoal);
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    tr:nth-child(3), tr:nth-child(5) {
+        background-color: var(--charcoal);
+    }
 }
 
 
