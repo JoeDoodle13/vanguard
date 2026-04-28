@@ -130,14 +130,18 @@ html {
         padding: 1rem;
         border-radius: 5px;
         font-weight: bold;
+        width: 250px;
+        transition: background-color 1s, transform 1s;
     }
 
     .button:hover {
         background-color: var(--red);
+        transform: scale(1.1, 1.1);
     }
 
 
-    /* section = expertise, edge */
+
+    /* container-main */
     main > .container-main {
         background-color: var(--white);
         display: flex;
@@ -166,12 +170,18 @@ html {
         color: var(--white);
         gap: 1rem;
         padding: 1rem 0;
+        min-width: 500px;
     }
 
     .offer .item {
         background-color: var(--blue);
         border-radius: 10px;
         padding: 1.25rem;
+        transition: transform 1s;
+    }
+
+    .offer .item:hover {
+        transform: translate(0, -10px);
     }
 
     .offer h3 {
@@ -259,9 +269,10 @@ html {
         margin-top: 0.5rem;
     }
 
-    form input {
+    form input, form textarea {
         display: block;
         width: 90%;
+        border: 3px solid var(--blue);
     }
 
     input[type="submit"] {
@@ -269,9 +280,17 @@ html {
         color: var(--white);
         font-size: 1.25rem;
         font-weight: bold;
+        border: 0 solid var(--blue);
         border-radius: 8px;
         padding: 0.75rem;
         margin: 2rem 0;
+        transition: border 0.5s, background-color .5s, transform .5s;
+    }
+
+    input[type="submit"]:hover {
+        border: 0 solid var(--red);
+        background-color: var(--red);
+        transform: scale(1.1, 1.1);
     }
 
     .address-container {
