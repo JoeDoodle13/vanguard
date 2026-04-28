@@ -154,16 +154,15 @@ html {
         font-weight: bold;
         font-size: 2rem;
         text-indent: 1rem;
-        padding: 1.5rem 2rem;
+        padding: 1rem;
     }
 
     .promise p {
-        max-width: 475px;
         line-height: 1.75rem;
-        margin: 1rem 2rem;
+        margin: 1rem;
     }
 
-    .offer .container {
+    .container-offer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -319,6 +318,7 @@ html {
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
+    min-width: 400px;
     max-width: 1200px;
     margin: 0 auto;
 }
