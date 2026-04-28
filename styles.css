@@ -67,6 +67,7 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 html {
     font-family: var(--font);
+    background-color: var(--white);
 }
 
 
@@ -137,6 +138,46 @@ html {
 
 
     /* section = expertise, edge */
+    main > .container-main {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+
+    .promise h2, .offer h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        text-indent: 1rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .promise p {
+        max-width: 475px;
+        line-height: 1.75rem;
+        margin: 1rem 2rem;
+    }
+
+    .offer .container {
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .offer .item {
+        background-color: var(--blue);
+        border-radius: 10px;
+        padding: 1.25rem;
+    }
+
+    .offer h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
 }
 
 
