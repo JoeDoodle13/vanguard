@@ -92,7 +92,11 @@ html {
         gap: 1rem;
     }
 
-    header h2 {
+    #nav-bar {
+        display: none;
+    }
+
+    nav label {
         font-size: 4rem;
         font-weight: normal;
         color: var(--white);
