@@ -408,6 +408,32 @@ div.logo {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
+    /* header */
+    nav label {
+        display: none;
+    }
+
+    header {
+        align-items: flex-start;
+    }
+
+    .brand {
+        align-items: flex-start;
+    }
+
+    nav ul {
+        visibility: visible;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 3rem 1rem 0rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--blue);
+    }
 
     /* offer */
     .container-offer {
