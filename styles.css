@@ -92,7 +92,11 @@ html {
         gap: 1rem;
     }
 
-    #nav-bar {
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked ~ ul li {
         display: none;
     }
 
@@ -101,12 +105,6 @@ html {
         font-weight: normal;
         color: var(--white);
     }
-
-    nav ul {
-        visibility: hidden;
-        height: 1px;
-    }
-
 
 
     /* hero */
@@ -428,6 +426,12 @@ div.logo {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
+    /* nav */
+    nav li {
+        background-color: var(--black);
+        color: var(--blue);
+    }
+
     /* header */
     nav label {
         display: none;
