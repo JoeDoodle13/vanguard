@@ -96,8 +96,12 @@ html {
         display: none;
     }
 
-    #toggle:checked ~ ul li {
+    #toggle ~ ul li {
         display: none;
+    }
+
+    #toggle:checked ~ ul li {
+        display: block;
     }
 
     nav label {
