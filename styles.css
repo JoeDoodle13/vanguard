@@ -104,7 +104,7 @@ html {
         display: block;
     }
 
-    nav h2 {
+    nav {
         text-align: right;
     }
 
@@ -451,15 +451,18 @@ div.logo {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
-    /* nav */
-    nav li {
-        background-color: var(--black);
-        color: var(--blue);
-    }
-
     /* header */
     nav label {
         display: none;
+    }
+
+    #toggle ~ ul li {
+        display: block;
+    }
+
+    nav li {
+        background-color: var(--black);
+        color: var(--blue);
     }
 
     header {
@@ -471,12 +474,12 @@ div.logo {
     }
 
     nav ul {
-        visibility: visible;
         display: flex;
-        justify-content:flex-start;
-        align-items: center;
         gap: 1rem;
-        padding: 1rem 3rem 1rem 0rem;
+    }
+
+    nav a {
+        padding: .5rem;
     }
 
     nav a {
